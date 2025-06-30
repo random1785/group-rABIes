@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=score,scores={scoretick=0..69420}] run execute unless entity @a[scores={done=0,score=1..}] run schedule function a:zzzscorecalc1 1s

@@ -1,0 +1,2 @@
+$execute as @e[type=armor_stand,tag=start] run tellraw @a [{"text":"Copyable coordinates: ","color":"aqua"},{"text":"[x]","color":"aqua","click_event":{"action":"copy_to_clipboard","value":"$(x)"}},{"text":" [z]","color":"aqua","click_event":{"action":"copy_to_clipboard","value":"$(z)"}},{"text":" [direct link to chunkbase]","color":"green","click_event":{"action":"open_url","url":"https://www.chunkbase.com/apps/seed-map#seed=1785&x=$(x)&z=$(z)"}}]
+

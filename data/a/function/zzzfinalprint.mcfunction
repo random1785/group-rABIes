@@ -1,0 +1,3 @@
+execute as @a if score @s score = @e[type=minecraft:armor_stand,limit=1,tag=score,tag=final] score run title @a title [{"color":"gold","selector":"@s"},{"text":" is the winner!"}]
+execute as @a if score @s score = @e[type=minecraft:armor_stand,limit=1,tag=score,tag=final] score run tellraw @a [{"color":"gold","bold":true,"selector":"@s"},{"text":" is the winner!"}]
+execute at @a run playsound minecraft:ui.toast.challenge_complete master @a

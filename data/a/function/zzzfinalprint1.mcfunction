@@ -1,0 +1,1 @@
+execute as @a[scores={score=1..}] run tellraw @a [{"color":"gold","selector":"@s"},{"text":" got a score of "},{"score":{"name":"@s","objective":"calc"}},{"text":"!"}]
