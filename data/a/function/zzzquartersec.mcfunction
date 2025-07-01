@@ -37,15 +37,19 @@ execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores
 execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=7}] at @s run tp @s @r[scores={team=7},distance=1..]
 
 
+# document
+tellraw @a[scores={zzzdocument=1..}] {"text":"[Information Document]","color":"green","click_event":{"action":"open_url","url":"https://docs.google.com/spreadsheets/d/1a1wW-kiejFnOrQCGWzjgrUkicAunYbu1Qpk1kHMScqQ/edit?usp=sharing"}}
 
 
 
 # death messsage reminder
 scoreboard players reset @a reminder
 scoreboard players reset @a zzzforefit
+scoreboard players reset @a zzzdocument
 scoreboard players reset @a tp
 scoreboard players enable @a reminder
 scoreboard players enable @a zzzforefit
+scoreboard players enable @a zzzdocument
 scoreboard players enable @a tp
 
 
