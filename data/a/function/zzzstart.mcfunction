@@ -72,6 +72,7 @@ execute as @e[type=armor_stand,tag=score,scores={t=2}] run schedule function a:b
 execute as @e[type=armor_stand,tag=score,scores={t=3}] run schedule function a:itemmessage 20t
 
 # give bonus items
+execute as @e[type=armor_stand,tag=score,limit=1,scores={d=1}] run schedule function a:zzzd1bonus 120t
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=2}] run schedule function a:zzzd2bonus 120t
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=3}] run schedule function a:zzzd3bonus 120t
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=4}] run schedule function a:zzzd4bonus 120t
