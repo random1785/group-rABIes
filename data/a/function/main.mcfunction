@@ -72,6 +72,7 @@ scoreboard objectives add newscore dummy
 scoreboard objectives add onefifty dummy
 scoreboard objectives add glass minecraft.mined:minecraft.glass
 scoreboard objectives add pup minecraft.used:minecraft.nether_star
+scoreboard objectives add echo minecraft.used:minecraft.echo_shard
 scoreboard players set @a death 1785
 scoreboard players set @a lobby 1785
 scoreboard players set @a team 0

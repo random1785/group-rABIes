@@ -54,6 +54,7 @@ execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard play
 
 # POWERUP
 execute as @e[tag=score,scores={round=1,scoretick=10..}] run execute as @a[scores={pup=1..}] run function a:zzzpowerup
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={echo=1..}] run function a:zzzpowersp
 execute as @e[tag=score,scores={round=1,scoretick=-10..9}] run scoreboard players reset @a pup
 
 
