@@ -1,5 +1,6 @@
 team modify a friendlyFire false
 team modify a collisionRule pushOwnTeam
+team modify a nametagVisibility never
 tag @a remove bugs
 tag @a remove final
 scoreboard players reset *
@@ -110,3 +111,4 @@ schedule clear a:zzzscorecalc3
 schedule clear a:zzzquartersec
 
 function a:zzzquartersec
+function a:zzzlocbar

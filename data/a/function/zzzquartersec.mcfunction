@@ -31,13 +31,13 @@ tag @a[scores={zzzforfeit=1..},tag=!a] add a
 
 # tp 
 execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..}] run tellraw @a [{"color":"gold","selector":"@s","bold":true},{"bold":false,"text":" has teleported to a random teammate!"}]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=1}] at @s run tp @s @r[gamemode=survival,scores={team=1},distance=1..]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=2}] at @s run tp @s @r[gamemode=survival,scores={team=2},distance=1..]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=3}] at @s run tp @s @r[gamemode=survival,scores={team=3},distance=1..]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=4}] at @s run tp @s @r[gamemode=survival,scores={team=4},distance=1..]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=5}] at @s run tp @s @r[gamemode=survival,scores={team=5},distance=1..]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=6}] at @s run tp @s @r[gamemode=survival,scores={team=6},distance=1..]
-execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=7}] at @s run tp @s @r[gamemode=survival,scores={team=7},distance=1..]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=1}] at @s run tp @s @r[gamemode=survival,scores={team=1,tp=0}]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=2}] at @s run tp @s @r[gamemode=survival,scores={team=2,tp=0}]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=3}] at @s run tp @s @r[gamemode=survival,scores={team=3,tp=0}]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=4}] at @s run tp @s @r[gamemode=survival,scores={team=4,tp=0}]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=5}] at @s run tp @s @r[gamemode=survival,scores={team=5,tp=0}]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=6}] at @s run tp @s @r[gamemode=survival,scores={team=6,tp=0}]
+execute as @e[tag=score,scores={round=1,scoretick=1..}] run execute as @a[scores={tp=1..,team=7}] at @s run tp @s @r[gamemode=survival,scores={team=7,tp=0}]
 
 
 # document
@@ -49,7 +49,7 @@ tellraw @a[scores={zzzdocument=1..}] {"text":"[Information Document]","color":"g
 scoreboard players reset @a reminder
 scoreboard players reset @a zzzforfeit
 scoreboard players reset @a zzzdocument
-scoreboard players reset @a tp
+scoreboard players set @a tp 0
 scoreboard players enable @a reminder
 scoreboard players enable @a zzzforfeit
 scoreboard players enable @a zzzdocument
