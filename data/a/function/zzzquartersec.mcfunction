@@ -18,15 +18,20 @@ execute as @e[scores={t=3,round=1,message=36..74,scoretick=1..}] run function a:
 
 
 # make trigger for forfeit
-gamemode spectator @a[scores={zzzforfeit=1..},tag=!a]
-execute as @a[scores={zzzforfeit=1..},tag=!a] run tellraw @a [{"selector":"@s","color":"dark_red"},{"text":" has forfeited."}]
-execute as @a[scores={zzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=1,round=1}] run scoreboard players set @s calc 12000
-execute as @a[scores={zzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=2,round=1}] run scoreboard players set @s calc 8000
-execute as @a[scores={zzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=3,round=1}] run scoreboard players set @s calc 4670
-execute as @a[scores={zzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=5,round=1}] run scoreboard players set @s calc 2400
-execute if entity @a[scores={zzzforfeit=1..},tag=!a] run execute as @a at @s run playsound minecraft:block.pointed_dripstone.land
-execute as @a[scores={zzzforfeit=1..},tag=!a] run execute unless entity @a[gamemode=survival,scores={done=0,score=1..}] run function a:zzzdone
-tag @a[scores={zzzforfeit=1..},tag=!a] add a
+scoreboard players add @a[scores={zzzforfeit=1..},tag=!a] zzzzfortemp 4
+tellraw @a[scores={zzzforfeit=1..},tag=!a] {"text":"To forfeit, please run this command again REALLY QUICKLY!","color":"red"}
+scoreboard players remove @a[scores={zzzzfortemp=1..}] zzzzfortemp 1
+
+scoreboard players add @a[scores={zzzzfortemp=5..},tag=!a] zzzzforfeit 1
+gamemode spectator @a[scores={zzzzforfeit=1..},tag=!a]
+execute as @a[scores={zzzzforfeit=1..},tag=!a] run tellraw @a [{"selector":"@s","color":"dark_red"},{"text":" has forfeited."}]
+execute as @a[scores={zzzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=1,round=1}] run scoreboard players set @s calc 12000
+execute as @a[scores={zzzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=2,round=1}] run scoreboard players set @s calc 8000
+execute as @a[scores={zzzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=3,round=1}] run scoreboard players set @s calc 4670
+execute as @a[scores={zzzzforfeit=1..},tag=!a] run execute as @e[tag=score,scores={ex=5,round=1}] run scoreboard players set @s calc 2400
+execute if entity @a[scores={zzzzforfeit=1..},tag=!a] run execute as @a at @s run playsound minecraft:block.pointed_dripstone.land
+execute as @a[scores={zzzzforfeit=1..},tag=!a] run execute unless entity @a[gamemode=survival,scores={done=0,score=1..}] run function a:zzzdone
+tag @a[scores={zzzzforfeit=1..},tag=!a] add a
 
 
 # tp 
@@ -48,6 +53,7 @@ tellraw @a[scores={zzzdocument=1..}] {"text":"[Information Document]","color":"g
 # death messsage reminder
 scoreboard players reset @a reminder
 scoreboard players reset @a zzzforfeit
+scoreboard players reset @a zzzzforfeit
 scoreboard players reset @a zzzdocument
 scoreboard players set @a tp 0
 scoreboard players enable @a reminder
