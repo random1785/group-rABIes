@@ -81,9 +81,9 @@ execute as @e[scores={round=1,t=2,message=35}] run execute as @a at @s if block 
 execute as @e[scores={round=1,t=2,message=35}] run execute as @a at @s if block ~ ~ ~ minecraft:iron_bars run scoreboard players add @s done 1
 execute as @e[scores={round=1,t=2,message=35}] run execute as @a at @s if block ~ ~1 ~ minecraft:iron_bars run scoreboard players add @s done 1
 
-execute as @e[scores={round=1,t=2,message=36}] run execute as @a at @s if block ~ ~-1 ~ minecraft:chain run scoreboard players add @s done 1
-execute as @e[scores={round=1,t=2,message=36}] run execute as @a at @s if block ~ ~ ~ minecraft:chain run scoreboard players add @s done 1
-execute as @e[scores={round=1,t=2,message=36}] run execute as @a at @s if block ~ ~1 ~ minecraft:chain run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=36}] run execute as @a at @s if block ~ ~-1 ~ minecraft:iron_chain run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=36}] run execute as @a at @s if block ~ ~ ~ minecraft:iron_chain run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=36}] run execute as @a at @s if block ~ ~1 ~ minecraft:iron_chain run scoreboard players add @s done 1
 
 execute as @e[scores={round=1,t=2,message=37}] run execute as @a at @s if block ~ ~-1 ~ minecraft:glass_pane run scoreboard players add @s done 1
 execute as @e[scores={round=1,t=2,message=37}] run execute as @a at @s if block ~ ~ ~ minecraft:glass_pane run scoreboard players add @s done 1
@@ -161,7 +161,7 @@ execute as @e[scores={t=2,message=32}] run tellraw @a[scores={reminder=1..}] [{"
 execute as @e[scores={t=2,message=33}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Obsidian]"}]
 execute as @e[scores={t=2,message=34}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Torch]"}]
 execute as @e[scores={t=2,message=35}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Iron Bars]"}]
-execute as @e[scores={t=2,message=36}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Chain]"}]
+execute as @e[scores={t=2,message=36}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Iron Chain]"}]
 execute as @e[scores={t=2,message=37}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Glass Pane]"}]
 execute as @e[scores={t=2,message=38}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Bone Block]"}]
 execute as @e[scores={t=2,message=39}] run tellraw @a[scores={reminder=1..}] [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Turtle Egg]"}]

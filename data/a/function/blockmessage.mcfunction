@@ -46,7 +46,7 @@ execute as @e[scores={message=32}] run tellraw @a [{"color":"red","text":"Goal: 
 execute as @e[scores={message=33}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Obsidian]"}]
 execute as @e[scores={message=34}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Torch]"}]
 execute as @e[scores={message=35}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Iron Bars]"}]
-execute as @e[scores={message=36}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Chain]"}]
+execute as @e[scores={message=36}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Iron Chain]"}]
 execute as @e[scores={message=37}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Glass Pane]"}]
 execute as @e[scores={message=38}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Bone Block]"}]
 execute as @e[scores={message=39}] run tellraw @a [{"color":"red","text":"Goal: "},{"bold":true,"text":"Stand on "},{"text":"[Turtle Egg]"}]

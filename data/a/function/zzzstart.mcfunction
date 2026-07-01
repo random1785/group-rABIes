@@ -6,7 +6,7 @@ scoreboard players add Round rounds 1
 scoreboard players operation Round newscore += Round onefifty
 scoreboard players operation @a[scores={score=-1785}] score = Round newscore
 scoreboard players operation @a[scores={score=7000..}] score = Round newscore
-gamerule announceAdvancements true
+gamerule show_advancement_messages true
 kill @e[type=armor_stand]
 summon minecraft:armor_stand 0 330 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["score","newcheck"]}
 scoreboard players set @e[type=armor_stand,tag=score] first -100

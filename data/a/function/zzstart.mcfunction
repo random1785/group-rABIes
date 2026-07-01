@@ -1,6 +1,5 @@
 tag @e remove newcheck
 tag @e remove final
-gamerule doImmediateRespawn true
 clear @a
 weather clear
 time set 10000
@@ -17,7 +16,7 @@ scoreboard players set Round ti 4
 scoreboard players set Round tb 3
 scoreboard players set Round onefifty 150
 scoreboard players set Round newscore 0
-gamerule announceAdvancements true
+gamerule show_advancement_messages true
 kill @e[type=armor_stand]
 summon minecraft:armor_stand 0 330 0 {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["score","newcheck"]}
 scoreboard players set @e[type=armor_stand,tag=score] first -100

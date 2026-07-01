@@ -32,3 +32,7 @@ execute as @a run trigger t4 add 0
 execute as @a run trigger t5 add 0
 execute as @a run trigger t7 add 0
 execute as @a run trigger t6 add 0
+
+kill @e[type=wolf,team=!]
+kill @e[type=parrot,team=!]
+kill @e[type=cat,team=!]
