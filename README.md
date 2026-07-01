@@ -1,5 +1,5 @@
 # group-rABIes
-Note: This datapack does not contain rabies and will not give you the disease. This datapack is specifically for `1.21.7` and above (i will work on adding sulfur cave stuff soon!!!). It will not work on previous versions due to blocks and items specific to this update being part of the objective list.
+Note: This datapack does not contain rabies and will not give you the disease. This datapack is specifically for `26.2` and above (i will work on adding sulfur cave stuff soon!!!). It will not work on previous versions due to blocks and items specific to this update being part of the objective list.
 
 ## Features
 Players will be placed in a random location in the world with seed `1785` and will be told to speedrun a certain Advancement, Block, or Item (hence the ABI in rABIes).<br>
@@ -21,4 +21,4 @@ PvP is disabled and sabotaging other players is frowned upon but is impossible t
 
 ## Known bugs and stuff to do
 Make forfeiting only possible if the player runs the command twice within a second (or some other range) to prevent accidental forfeits.
-
+add sulfur cave!!
