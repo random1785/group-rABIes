@@ -7,7 +7,8 @@ execute as @e[scores={round=1,t=2,message=1..50,scoretick=1..}] run function a:z
 execute as @e[scores={round=1,t=2,message=51..100,scoretick=1..}] run function a:zzzquartersec3
 execute as @e[scores={round=1,t=2,message=101..150,scoretick=1..}] run function a:zzzquartersec3a
 execute as @e[scores={round=1,t=2,message=151..200,scoretick=1..}] run function a:zzzquartersec4
-execute as @e[scores={round=1,t=2,message=200..242,scoretick=1..}] run function a:zzzquartersec5
+execute as @e[scores={round=1,t=2,message=201..240,scoretick=1..}] run function a:zzzquartersec5
+execute as @e[scores={round=1,t=2,message=241..276,scoretick=1..}] run function a:zzzquartersec5a
 
 
 
