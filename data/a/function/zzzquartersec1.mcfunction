@@ -56,6 +56,7 @@ execute as @e[scores={message=56,round=1,t=1}] run scoreboard players add @a[adv
 execute as @e[scores={message=57,round=1,t=1}] run scoreboard players add @a[advancements={adventure/kill_mob_near_sculk_catalyst=true}] done 1
 execute as @e[scores={message=58,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/remove_wolf_armor=true}] done 1
 execute as @e[scores={message=59,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/place_dried_ghast_in_water=true}] done 1
+execute as @e[scores={message=60,round=1,t=1}] run scoreboard players add @a[advancements={nether/ride_strider=true}] done 1
 
 #adv
 execute as @e[scores={t=1,message=2}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [The Parrots and the Bats]","color":"red","hover_event":{"action":"show_text","value":{"text":"The Parrots and the Bats\nBreed two mobs","color":"gold"}}}
@@ -115,3 +116,4 @@ execute as @e[scores={t=1,message=56}] run tellraw @a[scores={reminder=1..}] {"t
 execute as @e[scores={t=1,message=57}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [It Spreads]","color":"red","hover_event":{"action":"show_text","value":{"text":"It Spreads\nKill a mob next to a skulk catalyst","color":"gold"}}}
 execute as @e[scores={t=1,message=58}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [Shear Brilliance]","color":"red","hover_event":{"action":"show_text","value":{"text":"Shear Brilliance\nRemove wolf armor using shears","color":"gold"}}}
 execute as @e[scores={t=1,message=59}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [Stay Hydrated!]","color":"red","hover_event":{"action":"show_text","value":{"text":"Stay Hydrated!\nPlace a dried ghast in water","color":"gold"}}}
+execute as @e[scores={t=1,message=60}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [This Boat Has Legs]","color":"red","hover_event":{"action":"show_text","value":{"text":"This Boat Has Legs\nUse a Warped Fungus on a Stick while riding a Strider","color":"gold"}}}

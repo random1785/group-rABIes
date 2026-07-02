@@ -8,7 +8,7 @@ execute as @e[type=armor_stand,tag=score,limit=1,scores={d=4}] run scoreboard pl
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=1}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 2..8
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=2}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 9..31
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=3}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 32..44
-execute as @e[type=armor_stand,tag=score,limit=1,scores={d=4}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 46..59
+execute as @e[type=armor_stand,tag=score,limit=1,scores={d=4}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 46..60
 
 
 
@@ -72,5 +72,6 @@ execute as @e[scores={message=56}] run tellraw @a {"text":"Goal: [Hot Tourist De
 execute as @e[scores={message=57}] run tellraw @a {"text":"Goal: [It Spreads]","color":"red","hover_event":{"action":"show_text","value":{"text":"It Spreads\nKill a mob next to a skulk catalyst","color":"gold"}}}
 execute as @e[scores={message=58}] run tellraw @a {"text":"Goal: [Shear Brilliance]","color":"red","hover_event":{"action":"show_text","value":{"text":"Shear Brilliance\nRemove wolf armor using shears","color":"gold"}}}
 execute as @e[scores={message=59}] run tellraw @a {"text":"Goal: [Stay Hydrated!]","color":"red","hover_event":{"action":"show_text","value":{"text":"Stay Hydrated!\nPlace a dried ghast in water","color":"gold"}}}
+execute as @e[scores={message=60}] run tellraw @a {"text":"Goal: [This Boat Has Legs]","color":"red","hover_event":{"action":"show_text","value":{"text":"This Boat Has Legs\nUse a Warped Fungus on a Stick while riding a Strider","color":"gold"}}}
 
 execute as @e run scoreboard players set @s ex 1

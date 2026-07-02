@@ -12,8 +12,8 @@ execute as @e[scores={round=1,t=2,message=200..242,scoretick=1..}] run function 
 
 
 #item
-execute as @e[scores={t=3,round=1,message=1..35,scoretick=1..}] run function a:zzzquartersec6
-execute as @e[scores={t=3,round=1,message=36..74,scoretick=1..}] run function a:zzzquartersec7
+execute as @e[scores={t=3,round=1,message=1..33,scoretick=1..}] run function a:zzzquartersec6
+execute as @e[scores={t=3,round=1,message=34..86,scoretick=1..}] run function a:zzzquartersec7
 
 
 
