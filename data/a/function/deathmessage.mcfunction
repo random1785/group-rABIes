@@ -5,16 +5,15 @@ execute as @e[type=armor_stand,tag=score,limit=1,scores={d=2}] run scoreboard pl
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=3}] run scoreboard players remove Round d3 1
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=4}] run scoreboard players remove Round d4 1
 
-execute as @e[type=armor_stand,tag=score,limit=1,scores={d=1}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 2..8
+execute as @e[type=armor_stand,tag=score,limit=1,scores={d=1}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 3..8
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=2}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 9..31
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=3}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 32..44
 execute as @e[type=armor_stand,tag=score,limit=1,scores={d=4}] run execute store result score @e[type=armor_stand,tag=score,limit=1] message run random value 46..60
 
 
 
-execute as @e[scores={message=2}] run tellraw @a {"text":"Goal: [The Parrots and the Bats]","color":"red","hover_event":{"action":"show_text","value":{"text":"The Parrots and the Bats\nBreed two mobs","color":"gold"}}}
-execute as @e[scores={message=3}] run tellraw @a {"text":"Goal: [A Seedy Place]","color":"red","hover_event":{"action":"show_text","value":{"text":"A Seedy Place\nPlant a seed","color":"gold"}}}
-execute as @e[scores={message=4}] run tellraw @a {"text":"Goal: [Husbandry Root]","color":"red","hover_event":{"action":"show_text","value":{"text":"Husbandry Root\nEating anything","color":"gold"}}}
+execute as @e[scores={message=3}] run tellraw @a {"text":"Goal: [The Parrots and the Bats]","color":"red","hover_event":{"action":"show_text","value":{"text":"The Parrots and the Bats\nBreed two mobs","color":"gold"}}}
+execute as @e[scores={message=4}] run tellraw @a {"text":"Goal: [A Seedy Place]","color":"red","hover_event":{"action":"show_text","value":{"text":"A Seedy Place\nPlant a seed","color":"gold"}}}
 execute as @e[scores={message=5}] run tellraw @a {"text":"Goal: [Adventure Root]","color":"red","hover_event":{"action":"show_text","value":{"text":"Adventure Root\nKill or be killed by any creature","color":"gold"}}}
 execute as @e[scores={message=6}] run tellraw @a {"text":"Goal: [Minecraft Root]","color":"red","hover_event":{"action":"show_text","value":{"text":"Minecraft Root\nGet a crafting table","color":"gold"}}}
 execute as @e[scores={message=7}] run tellraw @a {"text":"Goal: [Stone Age]","color":"red","hover_event":{"action":"show_text","value":{"text":"Stone Age\nGet cobblestone","color":"gold"}}}

@@ -1,7 +1,6 @@
 #adv
-execute as @e[scores={message=2,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/breed_an_animal=true}] done 1
-execute as @e[scores={message=3,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/plant_seed=true}] done 1
-execute as @e[scores={message=4,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/root=true}] done 1
+execute as @e[scores={message=3,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/breed_an_animal=true}] done 1
+execute as @e[scores={message=4,round=1,t=1}] run scoreboard players add @a[advancements={husbandry/plant_seed=true}] done 1
 execute as @e[scores={message=5,round=1,t=1}] run scoreboard players add @a[advancements={adventure/root=true}] done 1
 execute as @e[scores={message=6,round=1,t=1}] run scoreboard players add @a[advancements={story/root=true}] done 1
 execute as @e[scores={message=7,round=1,t=1}] run scoreboard players add @a[advancements={story/mine_stone=true}] done 1
@@ -59,9 +58,8 @@ execute as @e[scores={message=59,round=1,t=1}] run scoreboard players add @a[adv
 execute as @e[scores={message=60,round=1,t=1}] run scoreboard players add @a[advancements={nether/ride_strider=true}] done 1
 
 #adv
-execute as @e[scores={t=1,message=2}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [The Parrots and the Bats]","color":"red","hover_event":{"action":"show_text","value":{"text":"The Parrots and the Bats\nBreed two mobs","color":"gold"}}}
-execute as @e[scores={t=1,message=3}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [A Seedy Place]","color":"red","hover_event":{"action":"show_text","value":{"text":"A Seedy Place\nPlant a seed","color":"gold"}}}
-execute as @e[scores={t=1,message=4}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [Husbandry Root]","color":"red","hover_event":{"action":"show_text","value":{"text":"Husbandry Root\nEating anything","color":"gold"}}}
+execute as @e[scores={t=1,message=3}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [The Parrots and the Bats]","color":"red","hover_event":{"action":"show_text","value":{"text":"The Parrots and the Bats\nBreed two mobs","color":"gold"}}}
+execute as @e[scores={t=1,message=4}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [A Seedy Place]","color":"red","hover_event":{"action":"show_text","value":{"text":"A Seedy Place\nPlant a seed","color":"gold"}}}
 execute as @e[scores={t=1,message=5}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [Adventure Root]","color":"red","hover_event":{"action":"show_text","value":{"text":"Adventure Root\nKill or be killed by any creature","color":"gold"}}}
 execute as @e[scores={t=1,message=6}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [Minecraft Root]","color":"red","hover_event":{"action":"show_text","value":{"text":"Minecraft Root\nGet a crafting table","color":"gold"}}}
 execute as @e[scores={t=1,message=7}] run tellraw @a[scores={reminder=1..}] {"text":"Goal: [Stone Age]","color":"red","hover_event":{"action":"show_text","value":{"text":"Stone Age\nGet cobblestone","color":"gold"}}}
