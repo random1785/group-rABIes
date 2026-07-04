@@ -34,7 +34,7 @@ execute as @e[scores={round=1,t=2,message=15}] run execute as @a at @s if block 
 execute as @e[scores={round=1,t=2,message=15}] run execute as @a at @s if block ~ ~-1 ~ minecraft:composter run scoreboard players add @s done 1
 
 execute as @e[scores={round=1,t=2,message=16}] run execute as @a at @s if block ~ ~ ~ minecraft:farmland run scoreboard players add @s done 1
-execute as @e[scores={round=1,t=2,message=16}] run execute as @a at @s if block ~ -1~ ~ minecraft:farmland run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=16}] run execute as @a at @s if block ~ ~-1 ~ minecraft:farmland run scoreboard players add @s done 1
 
 execute as @e[scores={round=1,t=2,message=17}] run execute as @a at @s if block ~ ~ ~ minecraft:dirt_path run scoreboard players add @s done 1
 execute as @e[scores={round=1,t=2,message=17}] run execute as @a at @s if block ~ ~-1 ~ minecraft:dirt_path run scoreboard players add @s done 1
@@ -47,7 +47,7 @@ execute as @e[scores={round=1,t=2,message=20}] run execute as @a at @s if block 
 
 execute as @e[scores={round=1,t=2,message=21}] run execute as @a at @s if block ~ ~ ~ minecraft:fern run scoreboard players add @s done 1
 
-execute as @e[scores={round=1,t=2,message=22}] run execute as @a at @s if block ~ ~ ~ minecraft:vines run scoreboard players add @s done 1
+execute as @e[scores={round=1,t=2,message=22}] run execute as @a at @s if block ~ ~ ~ minecraft:vine run scoreboard players add @s done 1
 
 execute as @e[scores={round=1,t=2,message=23}] run execute as @a at @s if block ~ ~-1 ~ minecraft:bedrock run scoreboard players add @s done 1
 
