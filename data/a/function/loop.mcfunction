@@ -4,6 +4,22 @@ execute store result score @e[type=minecraft:armor_stand,limit=1,tag=score] tpco
 execute as @e[type=armor_stand,tag=newcheck] run execute as @a run execute unless score @s score matches -69421.. run schedule function a:zzzjoin 1t
 
 
+
+execute as @a[scores={spec=1..}] run tellraw @a [{"color":"gray","selector":"@s"},{"text":" has become a spectator."}]
+execute as @a[scores={spec=1..}] run gamemode spectator @s
+execute as @a[scores={spec=1..}] run tag @s add spec
+execute as @a[scores={spec=1..}] run scoreboard players set @s team 8
+execute as @a[scores={spec=1..}] run scoreboard players reset @s spec
+
+execute as @a[scores={notspec=1..}] run tellraw @a [{"color":"green","selector":"@s"},{"text":" has stopped being a spectator."}]
+execute as @a[scores={notspec=1..}] run tp @s 0 302 0
+execute as @a[scores={notspec=1..}] run gamemode survival @s
+execute as @a[scores={notspec=1..}] run tag @s remove spec
+execute as @a[scores={notspec=1..}] run scoreboard players reset @s team
+execute as @a[scores={notspec=1..}] run scoreboard players reset @s notspec
+
+
+
 # team stuff
 execute as @a[scores={t1=1..}] run tellraw @a [{"color":"aqua","selector":"@s"},{"text":" has joined team 1!"}]
 execute as @a[scores={t1=1..}] run scoreboard players set @s team 1
@@ -33,6 +49,11 @@ execute as @a[scores={t7=1..}] run tellraw @a [{"color":"yellow","selector":"@s"
 execute as @a[scores={t7=1..}] run scoreboard players set @s team 7
 execute as @a[scores={t7=1..}] run scoreboard players reset @s t7
 
+execute as @a[scores={team=1..7}] run tellraw @s {"color":"dark_red","bold":true,"text":"PLEASE RUN /TRIGGER NOTSPEC OR ELSE IT WILL BREAK!!!"}
+execute as @a[scores={team=1..7}] run title @s title {"color":"dark_red","bold":true,"text":"/TRIGGER NOTSPEC"}
+execute as @a[scores={team=1..7}] at @s run playsound minecraft:block.note_block.basedrum
+
+
 
 execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] t7
 execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] t6
@@ -41,6 +62,8 @@ execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 30
 execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] t3
 execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] t2
 execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] t1
+execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] spec
+execute unless entity @e[limit=1,tag=score,scores={round=1}] positioned 12.79 308.35 0.70 run scoreboard players enable @a[distance=..30] notspec
 
 execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] t1
 execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] t2
@@ -49,6 +72,8 @@ execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard play
 execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] t5
 execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] t6
 execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] t7
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] spec
+execute in minecraft:the_nether positioned 11.08 159.00 4.82 run scoreboard players enable @a[distance=..60] notspec
 
 
 

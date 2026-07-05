@@ -8,7 +8,7 @@ execute as @e[scores={round=1,t=2,message=51..100,scoretick=1..}] run function a
 execute as @e[scores={round=1,t=2,message=101..150,scoretick=1..}] run function a:zzzquartersec3a
 execute as @e[scores={round=1,t=2,message=151..200,scoretick=1..}] run function a:zzzquartersec4
 execute as @e[scores={round=1,t=2,message=201..240,scoretick=1..}] run function a:zzzquartersec5
-execute as @e[scores={round=1,t=2,message=241..276,scoretick=1..}] run function a:zzzquartersec5a
+execute as @e[scores={round=1,t=2,message=241..286,scoretick=1..}] run function a:zzzquartersec5a
 
 
 
@@ -51,6 +51,11 @@ tellraw @a[scores={zzzdocument=1..}] {"text":"[Information Document]","color":"g
 
 
 
+# chunkbase
+execute as @a[scores={chunkbase=1..}] run function a:zzzpmacro1
+
+
+
 # death messsage reminder
 scoreboard players reset @a reminder
 scoreboard players reset @a zzzforfeit
@@ -61,6 +66,7 @@ scoreboard players enable @a reminder
 scoreboard players enable @a zzzforfeit
 scoreboard players enable @a zzzdocument
 scoreboard players enable @a tp
+scoreboard players enable @a chunkbase
 
 
 
@@ -69,6 +75,9 @@ execute as @a[scores={done=1..},tag=!a] at @s run playsound minecraft:ui.toast.c
 execute as @a[scores={done=1..},tag=!a] run scoreboard players add @e[type=armor_stand,tag=score] place 1
 execute as @a[scores={done=1..},tag=!a] run title @s title [{"text":"Time taken: ","color":"gold"},{"score":{"name":"@e[type=armor_stand,tag=score]","objective":"scoretick"}},{"text":" ticks"}]
 execute as @a[scores={done=1..},tag=!a] run tellraw @a [{"bold":true,"selector":"@s","color":"aqua"},{"text":" has completed the objective in "},{"score":{"name":"@e[type=armor_stand,tag=score]","objective":"scoretick"}},{"text":" ticks!"}]
+
+execute as @a[scores={done=1..},tag=!pspec] run scoreboard players add @s done 100
+execute as @a[scores={done=2000..},tag=!pspec] run tag @s add pspec
 
 
 # 	placement points
@@ -86,13 +95,13 @@ execute as @e[type=armor_stand,tag=score,scores={place=3}] run execute as @a[sco
 execute if score @e[limit=1,type=armor_stand,tag=score] first matches -100 run execute as @a[scores={done=1..},tag=!a] at @s run scoreboard players operation @e[limit=1,type=minecraft:armor_stand,tag=score] first = @e[limit=1,type=minecraft:armor_stand] scoretick
 
 # 	set the multiplier
-execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1..999},tag=!z] run tellraw @a [{"color":"dark_red","text":"A "},{"bold":true,"text":"5x"},{"text":" multiplier has been applied to this round, and the time limit is now "},{"bold":true,"text":"2000"},{"text":" ticks."}]
+execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1..999},tag=!z] run tellraw @a [{"color":"dark_red","text":"A "},{"bold":true,"text":"5x"},{"text":" multiplier has been applied to this round, and the time limit is now "},{"bold":true,"text":"3000"},{"text":" ticks."}]
 execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1000..1999},tag=!z] run tellraw @a [{"color":"red","text":"A "},{"bold":true,"text":"3x"},{"text":" multiplier has been applied to this round, and the time limit is now "},{"bold":true,"text":"4000"},{"text":" ticks."}]
 execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=2000..3999},tag=!z] run tellraw @a [{"color":"yellow","text":"A "},{"bold":true,"text":"2x"},{"text":" multiplier has been applied to this round, and the time limit is now "},{"bold":true,"text":"7000"},{"text":" ticks."}]
 execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=4000..10000},tag=!z] run tellraw @a {"color":"dark_green","text":"No multiplier has been applied to this round."}
 
 # ensure forfeited players do not get screwed over
-execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1..999},tag=!z] run scoreboard players set @a[scores={calc=12000}] calc 2400
+execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1..999},tag=!z] run scoreboard players set @a[scores={calc=12000}] calc 3200
 execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=1000..1999},tag=!z] run scoreboard players set @a[scores={calc=12000}] calc 4670
 execute as @a[scores={done=1..},tag=!a] run execute as @e[limit=1,type=minecraft:armor_stand,tag=score,scores={first=2000..3999},tag=!z] run scoreboard players set @a[scores={calc=12000}] calc 8000
 
@@ -116,7 +125,7 @@ execute as @a[scores={done=1..}] run execute unless entity @a[gamemode=survival,
 execute as @e[tag=score,scores={ex=1,scoretick=10000..10010}] run function a:zzzend1
 execute as @e[tag=score,scores={ex=2,scoretick=7000..7010}] run function a:zzzend2
 execute as @e[tag=score,scores={ex=3,scoretick=4000..4010}] run function a:zzzend3
-execute as @e[tag=score,scores={ex=5,scoretick=2000..2010}] run function a:zzzend5
+execute as @e[tag=score,scores={ex=5,scoretick=3000..3010}] run function a:zzzend5
 
 
 

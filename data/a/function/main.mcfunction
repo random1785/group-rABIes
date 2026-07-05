@@ -1,5 +1,7 @@
 tag @a remove bugs
 tag @a remove final
+tag @a remove pspec
+tag @a remove spec
 scoreboard players reset *
 scoreboard players set @a done 0
 tp @a 0 301 0
@@ -18,6 +20,10 @@ scoreboard objectives add message dummy
 scoreboard objectives add overkill dummy
 scoreboard objectives add zzzzforfeit dummy
 scoreboard objectives add zzzzfortemp dummy
+scoreboard objectives add spec trigger
+scoreboard objectives add notspec trigger
+scoreboard objectives add zzzzfortemp dummy
+scoreboard objectives add chunkbase trigger
 scoreboard objectives add done trigger
 scoreboard objectives add reminder trigger
 scoreboard objectives add zzzforfeit trigger

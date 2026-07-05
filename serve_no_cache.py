@@ -18,8 +18,16 @@ class NoCacheHandler(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-if __name__ == "__main__":
-    os.chdir(DIRECTORY)
-    with socketserver.TCPServer(("0.0.0.0", PORT), NoCacheHandler) as httpd:
-        print(f"Serving {DIRECTORY} on port {PORT} with no-cache headers")
+class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
+    daemon_threads = True
+
+
+def run_server(directory: str = DIRECTORY, port: int = PORT):
+    os.chdir(directory)
+    with ThreadedTCPServer(("0.0.0.0", port), NoCacheHandler) as httpd:
+        print(f"Serving {directory} on port {port} with no-cache headers")
         httpd.serve_forever()
+
+
+if __name__ == "__main__":
+    run_server()

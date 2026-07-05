@@ -8,6 +8,25 @@ execute as @e[tag=score,scores={ex=2,round=1,scoretick=4376..5250}] run title @a
 execute as @e[tag=score,scores={ex=2,round=1,scoretick=5251..6125}] run title @a[tag=!a] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"dark_gray"}
 execute as @e[tag=score,scores={ex=2,round=1,scoretick=6126..7000}] run title @a[tag=!a] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"black"}
 
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=0..875}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"aqua"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=876..1750}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"green"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=1751..2625}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"yellow"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=2626..3500}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"gold"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=3501..4375}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"red"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=4376..5250}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"dark_red"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=5251..6125}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"dark_gray"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=6126..7000}] run title @a[tag=spec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"black"}
+
+
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=0..875}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"aqua"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=876..1750}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"green"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=1751..2625}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"yellow"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=2626..3500}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"gold"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=3501..4375}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"red"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=4376..5250}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"dark_red"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=5251..6125}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"dark_gray"}
+execute as @e[tag=score,scores={ex=2,round=1,scoretick=6126..7000}] run title @a[tag=pspec] actionbar {"score":{"name":"@s","objective":"scoretick"},"color":"black"}
+
 
 execute as @e[tag=score,scores={ex=2,round=1,scoretick=3400}] run tellraw @a {"text":"3 minutes left!","color":"yellow"}
 execute as @e[tag=score,scores={ex=2,round=1,scoretick=3400}] at @a run playsound minecraft:block.note_block.bit player @a

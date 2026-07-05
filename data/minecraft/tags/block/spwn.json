@@ -29,7 +29,6 @@
     "kelp",
     "lever",
     "pale_hanging_moss",
-    "#inside_step_sound_blocks",
     "sea_pickle",
     "seagrass",
     "tall_seagrass",
@@ -39,6 +38,11 @@
     "sugar_cane",
     "#bee_growables",
     "tripwire_hook",
-    "#combination_step_sound_blocks"
+    "#combination_step_sound_blocks",
+    "glow_lichen",
+    "leaf_litter",
+    "lily_pad",
+    "pink_petals",
+    "wildflowers"
   ]
 }
