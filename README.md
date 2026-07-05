@@ -20,5 +20,4 @@ Players who join midway will be put in spectator for the current round and allow
 PvP is disabled and sabotaging other players is frowned upon but is impossible to enforce in the datapack itself.
 
 ## Known bugs and stuff to do
-Make forfeiting only possible if the player runs the command twice within a second (or some other range) to prevent accidental forfeits.
-add sulfur cave!!
+none!
