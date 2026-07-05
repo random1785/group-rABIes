@@ -8,5 +8,5 @@ give @a stone_pickaxe
 give @a netherite_shovel
 give @a pale_oak_log 16
 give @a mushroom_stew 4
-give @a nether_star[consumable={consume_seconds:0.5,animation:"trident",sound:"block.trial_spawner.detect_player",on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:wind_charged",amplifier:0,duration:40,show_particles:0b,show_icon:0b}]}]},use_cooldown={seconds:2},custom_name={"bold":true,"color":"dark_purple","text":"Aspect of the Nether Star"},lore=[{"color":"dark_purple","text":"Teleports you 20 blocks in the direction you are looking!"}]] 128
+give @a nether_star[max_stack_size=99,consumable={consume_seconds:0.5,animation:"trident",sound:"block.trial_spawner.detect_player",on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:wind_charged",amplifier:0,duration:40,show_particles:0b,show_icon:0b}]}]},use_cooldown={seconds:2},custom_name={"bold":true,"color":"dark_purple","text":"Aspect of the Nether Star"},lore=[{"color":"dark_purple","text":"Teleports you 20 blocks in the direction you are looking!"}]] 198
 give @a echo_shard[consumable={consume_seconds:1.6,animation:"brush",sound:"block.beacon.activate"},item_name={"bold":true,"color":"gold","text":"Spawnpoint Setter"},lore=[{"text":"Sets your spawn right here! Hold down for 1.6 seconds to use."}],enchantment_glint_override=true] 128
