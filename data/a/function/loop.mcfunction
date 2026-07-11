@@ -49,9 +49,9 @@ execute as @a[scores={t7=1..}] run tellraw @a [{"color":"yellow","selector":"@s"
 execute as @a[scores={t7=1..}] run scoreboard players set @s team 7
 execute as @a[scores={t7=1..}] run scoreboard players reset @s t7
 
-execute as @a[scores={team=1..7}] run tellraw @s {"color":"dark_red","bold":true,"text":"PLEASE RUN /TRIGGER NOTSPEC OR ELSE IT WILL BREAK!!!"}
-execute as @a[scores={team=1..7}] run title @s title {"color":"dark_red","bold":true,"text":"/TRIGGER NOTSPEC"}
-execute as @a[scores={team=1..7}] at @s run playsound minecraft:block.note_block.basedrum
+execute as @a[scores={team=1..7},tag=spec] run tellraw @s {"color":"dark_red","bold":true,"text":"PLEASE RUN /TRIGGER NOTSPEC OR ELSE IT WILL BREAK!!!"}
+execute as @a[scores={team=1..7},tag=spec] run title @s title {"color":"dark_red","bold":true,"text":"/TRIGGER NOTSPEC"}
+execute as @a[scores={team=1..7},tag=spec] at @s run playsound minecraft:block.note_block.basedrum
 
 
 
