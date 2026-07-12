@@ -20,4 +20,5 @@ Players who join midway will be put in spectator for the current round and allow
 PvP is disabled and sabotaging other players is frowned upon but is impossible to enforce in the datapack itself.
 
 ## Known bugs and stuff to do
-none!
+trigger chunkbase doesnt work in the nether (just change it to work for the nether, lol)
+spawn an armour stand at peoples spawn points maybe? that can detect if its blocked. might help idk. but actually... this probably wont work because........... ok i just have to like hard code it ~20 times i guess lmao 
